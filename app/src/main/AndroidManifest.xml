@@ -20,12 +20,29 @@
             </intent-filter>
         </activity>
 
-        <!-- Jpush:基本 service 的設定 -->
+        <!-- Jpush:基本 service 的設定
         <service
             android:name="cn.jpush.android.service.PushService"
             tools:node="replace"
             android:process=":multiprocess">
         </service>
+        -->
+
+        <!-- 自定義 Receiver -->
+        <receiver
+            android:name=".jpush.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_CLICK_ACTION" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <category android:name="com.codingbydumbbell.jiguangpushdemo" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
