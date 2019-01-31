@@ -1,4 +1,7 @@
 # android-demo-jiguangpush
-Android Demo 系列：極光推送
+極光推送範例：Android 端
+<br />
 
-https://codingbydumbbell.blogspot.com/2019/01/android-part-1android.html
+***
+
+此為部落格教學範例：[文章連結](https://codingbydumbbell.blogspot.com/2019/01/android-part-1android.html)
