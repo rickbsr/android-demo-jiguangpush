@@ -1,5 +1,5 @@
 # android-demo-jiguangpush
-極光推送範例：Android 端
+部落格範例：極光推送 Android 端
 <br />
 
 ***
